@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="APPR">
+
+    <!-- ** 결과셋이 여러개이므로 반드시 사용해야함. -->
+    <resultMap id="d" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d1" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d2" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d3" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d4" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d5" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d6" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d7" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d8" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d9" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d10" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d11" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d12" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d13" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d14" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d15" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d16" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d17" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d18" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d19" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d20" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d21" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d22" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d23" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d24" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d25" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d26" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d27" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d28" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d29" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d30" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d31" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d32" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d33" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d34" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d35" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d36" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d37" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d38" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d39" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d40" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d41" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d42" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d43" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d44" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d45" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d46" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d47" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d48" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d49" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d50" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d51" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d52" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d53" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d54" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d55" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d56" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d57" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d58" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d59" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d60" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d61" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d62" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d63" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d64" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d65" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d66" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d67" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d68" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d69" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d70" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d71" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d72" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d73" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d74" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d75" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d76" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d77" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d78" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d79" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d80" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d81" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d82" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d83" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d84" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d85" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d86" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d87" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d88" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d89" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d90" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d91" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d92" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d93" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d94" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d95" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d96" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d97" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d98" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d99" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d100" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d101" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d102" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d103" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d104" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d105" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d106" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d107" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d108" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d109" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d110" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d111" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d112" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d113" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d114" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d115" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d116" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d117" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d118" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d119" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d120" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d121" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d122" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d123" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d124" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d125" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d126" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d127" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d128" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d129" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d130" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d131" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d132" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d133" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d134" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d135" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d136" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d137" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d138" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d139" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d140" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d141" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d142" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d143" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d144" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d145" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d146" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d147" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d148" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d149" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d150" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d151" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d152" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d153" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d154" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d155" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d156" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d157" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d158" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d159" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d160" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d161" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d162" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d163" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d164" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d165" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d166" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d167" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d168" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d169" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d170" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d171" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d172" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d173" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d174" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d175" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d176" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d177" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d178" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d179" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d180" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d181" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d182" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d183" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d184" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d185" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d186" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d187" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d188" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d189" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d190" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d191" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d192" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d193" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d194" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d195" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d196" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d197" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d198" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d199" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d200" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d201" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d202" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d203" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d204" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d205" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d206" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d207" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d208" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d209" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d210" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d211" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d212" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d213" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d214" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d215" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d216" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d217" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d218" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d219" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d220" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d221" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d222" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d223" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d224" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d225" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d226" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d227" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d228" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d229" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d230" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d231" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d232" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d233" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d234" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d235" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d236" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d237" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d238" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d239" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d240" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d241" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d242" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d243" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d244" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d245" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d246" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d247" type="java.util.LinkedHashMap"></resultMap>
+
+    <resultMap id="d248" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d249" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d250" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d251" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d252" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d253" type="java.util.LinkedHashMap"></resultMap>
+    <resultMap id="d254" type="java.util.LinkedHashMap"></resultMap>
+
+    <select id="checkApprMethod" parameterType="com.hmlserver.vo.HmlParam" resultMap="d">
+        <![CDATA[
+            SELECT
+                bbi.AppraisalMethod
+            FROM Base_BasicInfo bbi
+            WHERE bbi.AppraisalId = ${apprId};
+        ]]>
+    </select>
+
+    <!-- 감정서 표지 -->
+    <select id="callProcedure" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC ${procId} ${apprId}
+        ]]>
+    </select>
+
+    <select id="APPR_COVER_1" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_1 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_COVER_2" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_2 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_COVER_3" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_3 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_COVER_4" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_4 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_COVER_IMG" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_IMG ${apprId}
+        ]]>
+    </select>
+
+    <select id="APPR_COVER_LANDPRICE_CALC1" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_LANDPRICE_CALC1 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_COVER_LANDPRICE_CALC2" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_LANDPRICE_CALC2 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_COVER_LANDPRICE_CALC3" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_LANDPRICE_CALC3 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_COVER_LANDPRICE_CALC4" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_COVER_LANDPRICE_CALC4 ${apprId}
+        ]]>
+    </select>
+
+    <select id="APPR_SCORESHEET_1" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_SCORESHEET_1 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_SCORESHEET_2" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_SCORESHEET_2 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_SCORESHEET_3" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_SCORESHEET_3 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_SCORESHEET_4" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_SCORESHEET_4 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_SCORESHEET_5" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_SCORESHEET_5 ${apprId}
+        ]]>
+    </select>
+    <select id="APPR_SCORESHEET_SUM" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_SCORESHEET_SUM ${apprId}
+        ]]>
+    </select>
+
+    <select id="APPR_BLUEPRINT" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_SCORESHEET_1 ${apprId}
+        ]]>
+    </select>
+
+    <select id="APPR_PICTURE" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE" resultMap="d">
+        <![CDATA[
+            EXEC APPR_PICTURE ${apprId}
+        ]]>
+    </select>
+
+    <!-- 감정평가법 프로시저 호출 -->
+    <!--
+
+        SP_SELECT_MOD_COVER : 감정서 표지
+        SP_SELECT_MOD_PHOTO : 감정서 표지사진
+        SP_SELECT_MOD_APPSHEET : 감정평가표
+
+        SP_SELECT_APP_P01 : 감정평가 요약
+        SP_SELECT_APP_P02 : 감정평가 개요
+        SP_SELECT_APP_P03 : 대상물건(대상부동산) 개요
+        SP_SELECT_APP_P04 : 대상물건(대상부동산) 현황
+
+        SP_SELECT_APP_A01 : 토지-공시지가기준법
+        SP_SELECT_APP_A02 : 토지-거래사례비교법
+        SP_SELECT_APP_A03 : 건물-원가법
+        SP_SELECT_APP_A04 : 기계기구(동산) 등 원가법
+        SP_SELECT_APP_A07 : 구분건물-거래사례비교법
+        SP_SELECT_APP_A08 : 수익환원법(직접환원법+DCF법)
+        SP_SELECT_APP_A11 : 손실보상-공시지가기준법
+
+        SP_SELECT_APP_F01 : 토지가액 산출
+        SP_SELECT_APP_F02 : 평가방법에 의한 시산가액
+        SP_SELECT_APP_F04 : 감정평가액 등 결정의견
+
+        SP_SELECT_MOD_SPECIFICATION : 감정평가명세표
+        SP_SELECT_MOD_MAP : ??
+        selectBlueprint : ??
+        selectPicture : ???
+
+    -->
+<!--    SP_SELECT_APP_1-->
+    <select id="SP_TPL_ALL" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33,d34,d35,d36,d37,d38,d39,d40,d41,d42,d43,d44,d45,d46,d47,d48,d49,d50,d51,d52,d53,d54,d55,d56,d57,d58,d59,d60,d61,d62,d63,d64,d65,d66,d67,d68,d69,d70,d71,d72,d73,d74,d75,d76,d77,d78,d79,d80,d81,d82,d83,d84,d85,d86,d87,d88,d89,d90,d91,d92,d93,d94,d95,d96,d97,d98,d99,d100,d101,d102,d103,d104,d105,d106,d107,d108,d109,d110,d111,d112,d113,d114,d115,d116,d117,d118,d119,d120,d121,d122,d133,d134,d135,d136,d137,d138,d139,d140,d141,d142,d143,d144,d145,d146,d147,d148,d149,d150,d151,d152,d153,d154,d155,d156,d157,d158,d159,d160,d161,d162,d163,d164,d165,d166,d167,d168,d169,d170,d171,d172,d173,d174,d175,d176,d177,d178,d179,d180,d181,d182,d183,d184,d185,d186,d187,d188,d189,d190,d191,d192,d193,d194,d195,d196,d197,d198,d199,d200,d201,d202,d203,d204,d205,d206,d207,d208,d209,d210,d211,d212,d213,d214,d215,d216,d217,d218,d219,d220,d221,d222,d223,d224,d225,d226,d227,d228,d229,d230,d231,d232,d233,d234,d235,d236,d237,d238,d239,d240"
+    >
+        <![CDATA[
+            EXEC SP_TPL_ALL ${apprId}
+        ]]>
+    </select>
+
+<!--    SP_SELECT_MOD_COVER-->
+    <select id="SP_TPL_COVER" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6">
+        <![CDATA[
+            EXEC SP_TPL_COVER ${apprId}
+        ]]>
+    </select>
+
+<!--    SP_SELECT_MOD_PHOTO-->
+    <select id="SP_TPL_PHOTO" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6">
+        <![CDATA[
+            EXEC SP_TPL_PHOTO ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_MOD_APPSHEET -->
+    <select id="SP_TPL_APPSHEET" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6">
+        <![CDATA[
+            EXEC SP_TPL_APPSHEET ${apprId}
+        ]]>
+    </select>
+
+<!--    SP_SELECT_APP_P01-->
+    <select id="SP_TPL_P01" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10">
+        <![CDATA[
+            EXEC SP_TPL_P01 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_P02 -->
+    <select id="SP_TPL_P02" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d">
+        <![CDATA[
+            EXEC SP_TPL_P02 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_P03 -->
+    <select id="SP_TPL_P03" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11">
+        <![CDATA[
+            EXEC SP_TPL_P03 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_P04 -->
+    <select id="SP_TPL_P04" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d">
+        <![CDATA[
+            EXEC SP_TPL_P04 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_A01 -->
+    <select id="SP_TPL_A01" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33,d34,d35,d36,d37,d38,d39,d40,d41,d42,d43,d44,d45,d46,d47,d48,d49,d50,d51,d52,d53,d54,d55">
+        <![CDATA[
+            EXEC SP_TPL_A01 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_A02 -->
+    <select id="SP_TPL_A02" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20">
+        <![CDATA[
+            EXEC SP_TPL_A02 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_A03 -->
+    <select id="SP_TPL_A03" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19">
+        <![CDATA[
+            EXEC SP_TPL_A03 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_A04 -->
+    <select id="SP_TPL_A04" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18">
+        <![CDATA[
+            EXEC SP_TPL_A04 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_A07 -->
+    <select id="SP_TPL_A07" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33,d34,d35">
+        <![CDATA[
+            EXEC SP_TPL_A07 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_A08 -->
+    <select id="SP_TPL_A08" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33,d34,d35,d36,d37,d38,d39,d40,d41,d42,d43,d44,d45,d46,d47,d48,d49,d50,d51,d52,d53,d54,d55,d56,d57,d58,d59,d60,d61">
+        <![CDATA[
+            EXEC SP_TPL_A08 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_A11 -->
+    <select id="SP_TPL_A11" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33,d34,d35,d36,d37,d38,d39,d40,d41,d42,d43,d44,d45,d46,d47,d48,d49,d50,d51,d52,d53,d54,d55,d56,d57,d58,d59,d60,d61">
+        <![CDATA[
+            EXEC SP_TPL_A11 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_F01 -->
+    <select id="SP_TPL_F01" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4">
+        <![CDATA[
+            EXEC SP_TPL_F01 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_F02 -->
+    <select id="SP_TPL_F02" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3">
+        <![CDATA[
+            EXEC SP_TPL_F02 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_F03 -->
+    <select id="SP_TPL_F03" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3">
+        <![CDATA[
+            EXEC SP_TPL_F03 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_APP_F04 -->
+    <select id="SP_TPL_F04" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8">
+        <![CDATA[
+            EXEC SP_TPL_F04 ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_MOD_SPECIFICATION -->
+    <select id="SP_TPL_SPECIFICATION" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33">
+        <![CDATA[
+            EXEC SP_TPL_SPECIFICATION ${apprId}
+        ]]>
+    </select>
+
+    <!-- SP_SELECT_MOD_MAP -->
+    <select id="SP_TPL_MAP" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d">
+        <![CDATA[
+        EXEC SP_TPL_MAP ${apprId}
+        ]]>
+    </select>
+
+    <!-- selectBlueprint -->
+    <select id="SP_TPL_BLUEPRINT" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d">
+        <![CDATA[
+            EXEC SP_TPL_BLUEPRINT ${apprId}
+        ]]>
+    </select>
+
+    <!-- selectPicture -->
+    <select id="SP_TPL_PICTURE" parameterType="com.hmlserver.vo.HmlParam" statementType="CALLABLE"
+            resultMap="d">
+        <![CDATA[
+            EXEC SP_TPL_PICTURE ${apprId}
+        ]]>
+    </select>
+
+</mapper>
