@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
 
-    <property name="LOG_PATH" value="./hmlServer/logs"></property>
+    <property name="LOG_PATH" value="./logs"></property>
 <!--    <property name="LOG_PATH" value="~/logs"></property>-->
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -15,12 +15,12 @@
         </encoder>
     </appender>
     <appender name="DAILY_ROLLING_FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_PATH}/hmlServer.log</file>
+        <file>${LOG_PATH}/apprApi.log</file>
         <encoder>
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_PATH}/hmlServer_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>${LOG_PATH}/apprApi_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 100MB -->
                 <maxFileSize>15MB</maxFileSize>
@@ -29,23 +29,23 @@
         </rollingPolicy>
     </appender>
 
-    <logger name="com.hmlserver.controller" level="INFO,DEBUG,ERROR">
+    <logger name="com.apprApi.controller" level="INFO,DEBUG,ERROR">
         <appender-ref ref="DAILY_ROLLING_FILE_APPENDER" />
     </logger>
 
-    <logger name="com.hmlserver.service" level="INFO,DEBUG,ERROR">
+    <logger name="com.apprApi.service" level="INFO,DEBUG,ERROR">
         <appender-ref ref="DAILY_ROLLING_FILE_APPENDER" />
     </logger>
 
-    <logger name="com.hmlserver.dao" level="INFO,DEBUG,ERROR">
+    <logger name="com.apprApi.dao" level="INFO,DEBUG,ERROR">
         <appender-ref ref="DAILY_ROLLING_FILE_APPENDER" />
     </logger>
 
-    <logger name="com.hmlserver.tests" level="INFO,DEBUG,ERROR">
+    <logger name="com.apprApi.tests" level="INFO,DEBUG,ERROR">
         <appender-ref ref="DAILY_ROLLING_FILE_APPENDER" />
     </logger>
 
-<!--    <logger name="com.hmlserver" level="ERROR">-->
+<!--    <logger name="com.apprApi" level="ERROR">-->
 <!--        <appender-ref ref="DAILY_ROLLING_FILE_APPENDER" />-->
 <!--    </logger>-->
 

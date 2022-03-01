@@ -13,9 +13,8 @@
     <title>Title</title>
 </head>
 <body>
-    <span>찾을 수 없는 페이지입니다.</span>
-    <div>1111 : ${error}</div>
-
-    <script>console.log("${error}")</script>
+    <p>오류가 발생하였습니다. => [${path}] ${status} ${error}</p>
+    <p>일시 : ${timestamp.toLocaleString()}</p>
+    <p>내용 : ${message}</p>
 </body>
 </html>

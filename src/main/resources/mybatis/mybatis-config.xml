@@ -10,7 +10,8 @@
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
     <typeAliases>
-        <package name="com.hmlserver.vo"/>
+        <typeAlias type="com.apprApi.vo.ApprApiParam" alias="ApprApiParam"></typeAlias>
+<!--        <package name="com.apprApi.vo"/>-->
     </typeAliases>
 </configuration>
 
