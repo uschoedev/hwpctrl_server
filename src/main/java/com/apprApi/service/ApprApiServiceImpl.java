@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Class HmlService
+ * @Class ApprApiService
  * @AUthor uschoe
  * @Date 2021.12.21
  */
@@ -26,7 +26,6 @@ public class ApprApiServiceImpl implements ApprApiService {
     private final ApprApiDao apprApiDao;
     private final CryptoUtil util;
 
-    @Autowired
     public ApprApiServiceImpl(ApprApiDao apprApiDao, CryptoUtil util){
         this.apprApiDao = apprApiDao;
         this.util = util;
@@ -97,6 +96,7 @@ public class ApprApiServiceImpl implements ApprApiService {
      * 규칙 : 프로시저ID/필드ID
      * 분리 작업하여 프로시저ID를 기준으로 객체화함.
      * 현재는 사용하지 않아서 Deprecated 처리했지만, 추후 응용이 가능하고, 재사용시에는 Deprecated Annotation을 해제하고 사용하는 것이 문맥상 정확하다.
+     * => Deprecated 된 이유는 데이터 자체를 원형 그대로 받아서 파싱후 전달.. 기존에는 꺼내서 처리했음....
      * @return
      */
     @Deprecated
@@ -203,7 +203,7 @@ public class ApprApiServiceImpl implements ApprApiService {
      * @param rowDataList
      * @return
      */
-    private JsonArray parseRowJson(List<List<Object>> rowDataList) {
+    private JsonArray parseRowJson(List<List<Object>> rowDataList) throws Exception {
 
 //        logger.info("getRowJson.parseRowJson :::: " + rowDataList);
 
@@ -230,7 +230,8 @@ public class ApprApiServiceImpl implements ApprApiService {
 
                     jsonObject = jsonElement.getAsJsonObject();
 
-                    if(jsonObject.size() <= 0){ continue; }
+                    if(jsonObject.isJsonNull()){ continue; }
+                    else if(jsonObject.size() <= 0){ continue; }
                     else {
 
                         jsonObject = decryptJson(jsonObject);
@@ -244,7 +245,13 @@ public class ApprApiServiceImpl implements ApprApiService {
 
                     for (int j = 0; j < jsonArray.size(); j++) {
 
+                        if(jsonArray.get(j).isJsonNull()){ continue; }
+
                         jsonObject = decryptJson(jsonArray.get(j).getAsJsonObject());
+
+                        if(jsonObject.isJsonNull()){ continue; }
+                        else if(jsonObject.size() <= 0 ){ continue; }
+
                         jsonElement = jsonObject;
                         dataArray.add(jsonElement);
 

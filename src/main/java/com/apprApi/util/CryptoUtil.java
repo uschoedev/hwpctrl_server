@@ -23,7 +23,6 @@ public class CryptoUtil {
 
     private final Environment env;
 
-    @Autowired
     public CryptoUtil(Environment env){
         this.env = env;
     }
@@ -34,7 +33,7 @@ public class CryptoUtil {
         String encStr = "";
 
         String encKey = env.getProperty("enc.seed.encKey");
-        String vecKey = env.getProperty("enc.seed.vecKey");
+        String vecKey = env.getProperty("enc.seed.decKey");
         int offset = Integer.parseInt(env.getProperty("enc.seed.offset"));
 
         if(null != msg && !"".equals(msg)) {
@@ -85,7 +84,7 @@ public class CryptoUtil {
         String decStr = "";
 
         String encKey = env.getProperty("enc.seed.encKey");
-        String vecKey = env.getProperty("enc.seed.vecKey");
+        String vecKey = env.getProperty("enc.seed.decKey");
         int offset = Integer.parseInt(env.getProperty("enc.seed.offset"));
 
         if(!encMsg.isEmpty()) {

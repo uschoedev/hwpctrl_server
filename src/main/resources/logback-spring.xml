@@ -26,6 +26,8 @@
                 <maxFileSize>15MB</maxFileSize>
                 <!-- kb, mb, gb -->
             </timeBasedFileNamingAndTriggeringPolicy>
+            <!-- 일자별로 떨궈야할때. -->
+<!--            <maxHistory>3</maxHistory>-->
         </rollingPolicy>
     </appender>
 

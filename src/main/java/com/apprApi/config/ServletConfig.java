@@ -37,7 +37,7 @@ import java.util.Properties;
 @ComponentScan( basePackages = {"com.apprApi.controller", "com.apprApi.service"} )
 public class ServletConfig implements WebMvcConfigurer {
 
-    /** Client <-> Server 간 통신시 데이터를 UTF-8로 인코딩 */
+    /** Client <-> Server 간 통신시 모든 메시지 및 데이터를 UTF-8로 인코딩 */
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
 

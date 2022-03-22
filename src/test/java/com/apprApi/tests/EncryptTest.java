@@ -9,7 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.env.Environment;
 import org.springframework.test.context.TestPropertySource;
 
-@TestPropertySource(properties = "classpath:encseed.properties")
 @SpringBootTest
 public class EncryptTest {
 

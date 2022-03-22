@@ -1,7 +1,7 @@
 package com.apprApi.vo;
 
 /**
- * @Class HmlParam
+ * @Class ApprApiParam
  * @Author uschoe
  * @Date 2021.12.17
  * @Description

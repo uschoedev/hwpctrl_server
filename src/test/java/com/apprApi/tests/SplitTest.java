@@ -7,13 +7,14 @@ import com.google.gson.JsonObject;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-@SpringBootTest
+@SpringBootTest(properties = "spring.profiles.active:local")
 public class SplitTest {
 
     @Test

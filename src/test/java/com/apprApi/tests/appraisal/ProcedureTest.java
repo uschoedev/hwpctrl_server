@@ -17,7 +17,6 @@ import java.util.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(properties = "spring.profiles.active:local")
-//@SpringBootTest(properties = "spring.config.location=classpath:test.properties")
 @TestPropertySource(locations = "classpath:test.properties")
 public class ProcedureTest {
 
@@ -42,12 +41,12 @@ public class ProcedureTest {
 //        final String separator = env.getProperty("appr.separator");
         final List<String> procedureList = new ArrayList<>(
           Arrays.asList(
-//                  "SP_TPL_COVER", "SP_TPL_PHOTO", "SP_TPL_APPSHEET",
-//                  "SP_TPL_P01", "SP_TPL_P02", "SP_TPL_P03", "SP_TPL_P04",
-//                  "SP_TPL_A01", "SP_TPL_A02", "SP_TPL_A03", "SP_TPL_A04", "SP_TPL_A07", "SP_TPL_A08", "SP_TPL_A11",
-//                  "SP_TPL_F01", "SP_TPL_F02", "SP_TPL_F03", "SP_TPL_F04",
-//                  "SP_TPL_SPECIFICATION", "SP_TPL_MAP", "SP_TPL_BLUEPRINT", "SP_TPL_PICTURE"
-                "SP_TPL_ALL"
+//              "SP_TPL_COVER", "SP_TPL_PHOTO", "SP_TPL_APPSHEET",
+//              "SP_TPL_P01", "SP_TPL_P02", "SP_TPL_P03", "SP_TPL_P04",
+//              "SP_TPL_A01", "SP_TPL_A02", "SP_TPL_A03", "SP_TPL_A04", "SP_TPL_A07", "SP_TPL_A08", "SP_TPL_A11",
+//              "SP_TPL_F01", "SP_TPL_F02", "SP_TPL_F03", "SP_TPL_F04",
+//              "SP_TPL_SPECIFICATION", "SP_TPL_MAP", "SP_TPL_BLUEPRINT", "SP_TPL_PICTURE"
+                "SP_TPL_PICTURE"
           )
         );
 

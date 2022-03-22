@@ -15,10 +15,10 @@ server:
 
   ssl:
     enabled: false
-    key-store: "classpath:sslkey/hwpctrl_new_server.jks"
+    key-store: "keystore.p12"
     key-store-password: "aims1234"
     key-password: "aims1234"
-    key-alias: "aims"
+    key-alias: "bns-ssl"
 
 # [ Server Configuration ]
 spring:
@@ -28,11 +28,14 @@ spring:
   mssql:
     datasource:
       driver-class-name: "net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
-      jdbc-url: "jdbc:log4jdbc:sqlserver://34.64.77.16:1433;DatabaseName=AIMS;"
       # jdbc_url: "jdbc:sqlserver://34.64.77.16:1433;databaseName=AIMS;"
-      username: "aims3"
-      password: "wnwospt001!"
-      schema: "dbo"
+      jdbc-url: "jdbc:log4jdbc:sqlserver://34.64.77.16:1433;DatabaseName=AIMS;"
+      # username: "aims3"
+      username: ENC(3yC5qBaayGPxT4OXCG3iPg==)
+      # password: "wnwospt001!"
+      password: ENC(GpX8m8XjP2vl5Pyn6YRIQuIL9LnEnpz9)
+      # schema: "dbo"
+      schema: ENC(qoDoQl/vZeYk6uF3MzIs8g==)
     mapper:
       prefix: "APPR"
 
@@ -40,8 +43,19 @@ spring:
 enc:
   seed:
     encKey: "45131c4cd4b505fd7533f9a131fc7a3cf85231bc6e88deac8df70e47f50b99db"
-    vecKey: "01c0e5e3a439f0bf4ae6ab73ff44a21fb07d57cd739678e82cb769a04efe46aa"
+    decKey: "01c0e5e3a439f0bf4ae6ab73ff44a21fb07d57cd739678e82cb769a04efe46aa"
     offset: 0
+
+# [ Jasypt Configuration ]
+jasypt:
+  encryptor:
+    bean: "jasyptStringEncryptor"
+    password: "aims1234"
+    algorithm: "PBEWithMD5AndDES"
+    salt-generator-classname: "org.jasypt.salt.RandomSaltGenerator"
+    string-output-type: "base64"
+    pool-size: "1"
+    key-obtention-iterations: "1000"
 
 # [ Logback Configuration ]
 logging:

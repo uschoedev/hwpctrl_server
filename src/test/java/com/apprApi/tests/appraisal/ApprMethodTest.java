@@ -10,13 +10,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.env.Environment;
+import org.springframework.test.context.TestPropertySource;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(properties = "spring.config.location=classpath:test.properties")
+@SpringBootTest(properties = "spring.profiles.active:local")
+//@SpringBootTest(properties = "spring.config.location=classpath:test.properties")
+@TestPropertySource(locations = "classpath:test.properties")
 public class ApprMethodTest {
 
     private static Logger logger = LoggerFactory.getLogger(ApprMethodTest.class);

@@ -27,16 +27,25 @@ import javax.sql.DataSource;
 )
 public class DatabaseConfig {
 
+    /**
+     * Database Connection을 위한 DataSource 객체 생성
+     * */
     @Bean(name = "mssqlDataSource")
     @Primary
     @ConfigurationProperties(prefix = "spring.mssql.datasource")
     public static DataSource mssqlDataSource(){
+
         DataSource dataSource = DataSourceBuilder
-                .create()
-                .build();
+                                .create()
+                                .build();
+
         return dataSource;
+
     }
 
+    /**
+     * DataSource 기반 SqlSession 객체 생성
+     * */
     @Bean(name = "mssqlSqlSessionFactory")
     public SqlSessionFactory mssqlSessionFactory(DataSource dataSource) throws Exception {
 
@@ -54,6 +63,10 @@ public class DatabaseConfig {
 
     }
 
+    /**
+     * SqlSessionTemplate 생성.. sqlSession을 그대로 사옹할 수 있지만..
+     * template 형태로 생성하게 되면 자동으로 트랜잭션을 관리하고 세션의 생명주기를 관리한다..
+     * */
     @Bean(name = "mssqlSqlSessionTemplate")
     @Primary
     public SqlSessionTemplate mssqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
